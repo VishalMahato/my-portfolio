@@ -32,7 +32,7 @@ export function Astronaut(props) {
 					name="Sketchfab_model"
 					rotation={[-Math.PI / 2, -0.2, 2.2]}
 					scale={props.scale || 0.3}
-					position={props.position || [1.3, -1, 0]}
+					position={props.position || [1.3, -0.2, 0]}
 				>
 					<group name="Root">
 						<group name="metarig">
