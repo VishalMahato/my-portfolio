@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
+import CopyEmailButton from "../components/copyEmailButton";
 const About = () => {
 	const grid2Container = useRef();
 	return (
@@ -19,7 +20,7 @@ const About = () => {
 							<p className="subtext">
 								With expertise in backend development, DevOps, and cloud
 								technologies, I build reliable and scalable software and
-								infrastructure solutions that power modern applications.
+								infrastructure solutions.
 							</p>
 						</div>
 					</div>
@@ -37,39 +38,39 @@ const About = () => {
 						</p>
 						<Card
 							style={{ rotate: "75deg", top: "30%", left: "20%" }}
-							text="GRASP"
+							text="AWS"
 							containerRef={grid2Container}
 						/>
 						<Card
 							style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-							text="SOLID"
+							text="DevOps"
 							containerRef={grid2Container}
 						/>
 						<Card
 							style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-							text="Design Patterns"
+							text="NodeJS"
 							containerRef={grid2Container}
 						/>
 						<Card
 							style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-							text="Design Principles"
+							text="OpenAI"
 							containerRef={grid2Container}
 						/>
 						<Card
 							style={{ rotate: "20deg", top: "10%", left: "38%" }}
-							text="SRP"
+							text="Cloud"
 							containerRef={grid2Container}
 						/>
-						<Card
+						{/* <Card
 							style={{ rotate: "30deg", top: "70%", left: "70%" }}
 							image="assets/logos/csharp-pink.png"
 							containerRef={grid2Container}
-						/>
-						<Card
+						/> */}
+						{/* <Card
 							style={{ rotate: "-45deg", top: "70%", left: "25%" }}
 							image="assets/logos/dotnet-pink.png"
 							containerRef={grid2Container}
-						/>
+						/> */}
 						<Card
 							style={{ rotate: "-45deg", top: "5%", left: "10%" }}
 							image="assets/logos/blazor-pink.png"
@@ -83,7 +84,7 @@ const About = () => {
 					<div className="z-10 w-[50%]">
 						<p className="headtext">Time Zone</p>
 						<p className="subtext">
-							I'm based in India, and open to remote work worldwide
+							I'm based in <span className="text-white">India</span>, and open to remote work worldwide
 						</p>
 					</div>
 					<figure className="absolute left-[30%] top-[10%]">
@@ -92,10 +93,19 @@ const About = () => {
 				</div>
 
 				{/* Grid4*/}
-				<div className="grid-special-color grid-4"></div>
+				<div className="grid-special-color grid-4">
+					<div className="flex h-full flex-col items-center justify-around ">
+						<p className="text-center headtext">Do You Wanna Connect?</p>
+						<div>
+							<CopyEmailButton/>
+						</div>
+					</div>
+				</div>
 
 				{/* Grid5*/}
-				<div className="grid-default-color grid-5"></div>
+				<div className="grid-default-color grid-5">
+					<div className="absolute inset-y-0 md:inset-y-9 w-full h-full  start-[50%] md:scale-125 "></div>
+				</div>
 			</div>
 		</section>
 	);
