@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/copyEmailButton";
+import { Frameworks } from "../components/Frameworks";
+
 const About = () => {
 	const grid2Container = useRef();
 	return (
@@ -61,19 +63,23 @@ const About = () => {
 							text="Cloud"
 							containerRef={grid2Container}
 						/>
-						{/* <Card
+						<Card
 							style={{ rotate: "30deg", top: "70%", left: "70%" }}
-							image="assets/logos/csharp-pink.png"
+							image="assets/logos/Node.js.svg"
 							containerRef={grid2Container}
-						/> */}
-						{/* <Card
-							style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-							image="assets/logos/dotnet-pink.png"
+						/>
+						<Card
+							style={{
+								rotate: "-45deg",
+								top: "70%",
+								left: "25%",
+							}}
+							image="assets/logos/AWS.svg"
 							containerRef={grid2Container}
-						/> */}
+						/>
 						<Card
 							style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-							image="assets/logos/blazor-pink.png"
+							image="assets/logos/Kubernetes.svg"
 							containerRef={grid2Container}
 						/>
 					</div>
@@ -84,11 +90,12 @@ const About = () => {
 					<div className="z-10 w-[50%]">
 						<p className="headtext">Time Zone</p>
 						<p className="subtext">
-							I'm based in <span className="text-white">India</span>, and open to remote work worldwide
+							I'm based in <span className="text-white">India</span>, and open
+							to remote work worldwide
 						</p>
 					</div>
 					<figure className="absolute left-[30%] top-[10%]">
-						<Globe/>
+						<Globe />
 					</figure>
 				</div>
 
@@ -97,14 +104,23 @@ const About = () => {
 					<div className="flex h-full flex-col items-center justify-around ">
 						<p className="text-center headtext">Do You Wanna Connect?</p>
 						<div>
-							<CopyEmailButton/>
+							<CopyEmailButton />
 						</div>
 					</div>
 				</div>
 
 				{/* Grid5*/}
 				<div className="grid-default-color grid-5">
-					<div className="absolute inset-y-0 md:inset-y-9 w-full h-full  start-[50%] md:scale-125 "></div>
+					<div className="z-10 w-[50%] h-full flex flex-col justify-center gap-6">
+						<p className="headText text-2xl text-white">Tech Stack</p>
+						<p className="subText ">
+							I specialize in a variety if languages, frameworks, and tools that
+							allow me to build robust and scalable applications
+						</p>
+					</div>
+					<div className="absolute inset-y-0 md:inset-y-9 w-full h-full  start-[50%] md:scale-125 ">
+						<Frameworks />
+					</div>
 				</div>
 			</div>
 		</section>

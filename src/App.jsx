@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Projects from "./sections/Projects"
 
 function App() {
 	return (
@@ -11,7 +12,7 @@ function App() {
 			<Navbar />
 			<Hero />
             <About/>
-            <section className="h-screen"></section>
+            <Projects/>
             <section className="h-screen"></section>
             <section className="h-screen"></section>
 		</div>
