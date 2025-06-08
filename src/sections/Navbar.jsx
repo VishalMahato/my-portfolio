@@ -34,9 +34,9 @@ const Navbar = () => {
 	const [isMenuOpen, setisMenuOpen] = useState(false);
 	return (
 		<div className="fixed inset-x-0  z-20 w-full backdrop-blur-lg bg-primary/40 ">
-			<div className="mx-auto c-space max-w-7xl">
+			<div className="mx-auto c-space max-w-7xl" >
 				<div className="flex items-center justify-between py-2 sm:py-0 ">
-					<a className=" text-xl font-bold transition-colors text-neutral-400 ">
+					<a  href="#about" className=" text-xl font-bold transition-colors text-neutral-400  scroll-smooth">
 						Vishal
 					</a>
 					<button

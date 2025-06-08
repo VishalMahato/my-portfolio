@@ -57,7 +57,7 @@ body {
 }
 
 .c-space {
-  @apply sm:px-10 px-5 lg:px-15;
+  @apply sm:px-0 px-0 lg:px-0;
 }
 
 .hover-animation {
