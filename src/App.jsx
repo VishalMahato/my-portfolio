@@ -6,6 +6,7 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
+import Testimonials from "./sections/Testimonials";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
             <About/>
             <Projects/>
             <Experiences/>
+			<Testimonials/>
             <section className="h-screen"></section>
 		</div>
 	);
