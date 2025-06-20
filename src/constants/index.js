@@ -243,39 +243,38 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
+    title: "DevOps & Cloud Automation Engineer",
     job: "HCLTech",
-    date: "2021-2023",
+    date: "2022-2023",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Designed and developed a multicloud automation tool to optimize costs and streamline user and account management across AWS, Azure, and GCP.",
+      "Created a unified dashboard to visualize all cloud accounts and data, eliminating the need to manage each account individually.",
+      "Automated key cloud operations, reducing manual intervention and improving efficiency.",
+      "Built and managed CI/CD pipelines and implemented robust hosting solutions for automation services."
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
+    title: "Data Engineer (Client: Unity Water)",
+    job: "HCLTech",
     date: "2023-2024",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Developed scalable Spark scripts to transform and process millions of rows of data, ensuring high performance and reliability.",
+      "Addressed key challenges in data engineering, including script scalability and efficient large-scale data handling.",
+      "Collaborated closely with the client team to deliver data solutions tailored to business needs."
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "Developer (Client: Cadent Gas)",
+    job: "HCLTech",
+    date: "2024-Present",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Developed and maintained modern web pages and features based on client requirements.",
+      "Managed and optimized Azure resources to ensure high availability and cost-effective cloud solutions.",
+      "Contributed to full-stack development tasks, collaborating with cross-functional teams to deliver end-to-end solutions."
     ],
   },
 ];
+
 export const reviews = [
   {
     name: "Rohan Raj",
