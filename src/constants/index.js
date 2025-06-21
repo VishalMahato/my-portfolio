@@ -292,18 +292,18 @@ export const reviews = [
 		name: "Annu Singh",
 		username: "@annu",
 		body: "We did a hackathon together a while back. He's the type who takes charge and always follows through. Super reliable.",
-		img: "https://robohash.org/alice",
+		img: "https://res.cloudinary.com/djkw83ha6/image/upload/v1750480595/Annu_gm6qtg.jpg",
 	},
 	{
 		name: "Aakash",
 		username: "@aakash",
-		body: "Wroked on project with him, He can do anything from devops to frontend",
+		body: "Worked on a project with him—he can do pretty much anything, from DevOps to frontend.",
 		img: "https://res.cloudinary.com/djkw83ha6/image/upload/v1750476432/Aakash_ldydqg.jpg",
 	},
 	{
 		name: "Deepak Kamat",
 		username: "@kamat",
-		body: "Worked with him in a Project, He helped a lot to made my work scalable",
+		body: "Had him on my project, and he really helped make everything scalable.", 
 		img: "https://res.cloudinary.com/djkw83ha6/image/upload/v1750477979/deepak_c27qil.jpg",
 	},
 	{
