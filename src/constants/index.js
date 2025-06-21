@@ -322,6 +322,6 @@ export const reviews = [
 		name: "Yash Gupta",
 		username: "@DevBeastYash",
 		body: "He's been a work buddy for so long, Always great to work with him",
-		img: "https://robohash.org/eve",
+		img: "https://res.cloudinary.com/djkw83ha6/image/upload/v1750516194/yash_tlohrr.jpg",
 	},
 ];
