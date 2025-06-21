@@ -3,14 +3,15 @@ import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { motion } from "motion/react";
 
 const About = () => {
 	const grid2Container = useRef();
 	return (
-		<section  id="about" className="c-space section-spacing ">
+		<section id="about" className="c-space section-spacing ">
 			<h2 className="text-heading">About Me</h2>
 			<div className="grid grid-cols-1 gap-4  md:grid-cols-6 md:auto-rows-[18rem] mt-12 ">
-				{/* {/* Grid 1} */}
+				{/* about me */}
 				<div className="flex items-end grid-default-color grid-1">
 					<img
 						src="assets/coding-pov.png"
@@ -29,7 +30,7 @@ const About = () => {
 					{/* <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo-950  " /> */}
 				</div>
 
-				{/* Grid2 */}
+				{/* Code is craft box*/}
 				<div className="grid-default-color grid-2">
 					<div
 						ref={grid2Container}
@@ -85,7 +86,7 @@ const About = () => {
 					</div>
 				</div>
 
-				{/* Grid3 */}
+				{/*My Location*/}
 				<div className="grid-black-color grid-3">
 					<div className="z-10 w-[50%]">
 						<p className="headtext">Time Zone</p>
@@ -104,7 +105,28 @@ const About = () => {
 					<div className="flex h-full flex-col items-center justify-around ">
 						<p className="text-center headtext">Do You Wanna Connect?</p>
 						<div>
-							<CopyEmailButton />
+							{/* <CopyEmailButton /> */}
+							<a href="mailto:mailmevishalmahato@gmail.com">
+							<motion.button
+								className=" rounded-full font-text-center cursor-pointer w-[12rem] overflow-hidden extralight  text-sm relative px-1 py-4 bg-primary  "
+								whileHover={{ y: -3 }}
+								whileTap={{ scale: 1.1 }}
+								
+							>
+								<motion.p
+									className="flex items-center justify-center gap-2"
+									initial={{ opacity: 0, y: -10 }}
+									exit={{ opacity: 0, y: -10 }}
+									animate={{ opacity: 100, y: 0 }}
+									transition={{ duration: 0.1, ease: "easeInOut" }}
+									key="copy"
+								>
+									<img src="assets/email.svg" alt="copy" className="w-5" />
+
+									Email Here
+								</motion.p>
+							</motion.button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -112,9 +134,11 @@ const About = () => {
 				{/* Grid5*/}
 				<div className="grid-default-color grid-5">
 					<div className="z-10 w-[50%] h-full flex flex-col justify-center gap-6">
-						<p className="headText text-2xl text-white">Tech Stack</p>
+						<p className="headText sm:text-2xl text-xl text-white">
+							Tech Stack
+						</p>
 						<p className="subText ">
-							I specialize in a variety if languages, frameworks, and tools that
+							I specialize in a variety of languages, frameworks, and tools that
 							allow me to build robust and scalable applications
 						</p>
 					</div>
